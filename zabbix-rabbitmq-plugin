@@ -151,7 +151,7 @@ def main():
 
         if args.check_method == "queue":
             url = '/api/queues/%s' % (urllib.quote_plus(args.vhost))
-            check_method = '%s_%s' % (str(args.check_method), args.vhost)
+            check_method = '%s/%s' % (str(args.check_method), args.vhost)
 
         if args.check_method == "node":
             url = '/api/nodes'
