@@ -25,10 +25,10 @@
             <discovery_rules>
                 <discovery_rule>
                     <name>RabbitMQ - Nodes - Discovery</name>
-                    <type>7</type>
+                    <type>0</type>
                     <snmp_community/>
                     <snmp_oid/>
-                    <key>rabbitmq.discover.nodes[my-host.example.com]</key>
+                    <key>rabbitmq.discover.nodes[{HOSTNAME}]</key>
                     <delay>900</delay>
                     <status>0</status>
                     <allowed_hosts/>
@@ -58,7 +58,7 @@
                     <item_prototypes>
                         <item_prototype>
                             <name>RabbitMQ - Node - {#NODENAME} - disk_free</name>
-                            <type>7</type>
+                            <type>0</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
@@ -101,7 +101,7 @@
                         </item_prototype>
                         <item_prototype>
                             <name>RabbitMQ - Node - {#NODENAME} - disk_free_limit</name>
-                            <type>7</type>
+                            <type>0</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
@@ -144,7 +144,7 @@
                         </item_prototype>
                         <item_prototype>
                             <name>RabbitMQ - Node - {#NODENAME} - fd_total</name>
-                            <type>7</type>
+                            <type>0</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
@@ -187,7 +187,7 @@
                         </item_prototype>
                         <item_prototype>
                             <name>RabbitMQ - Node - {#NODENAME} - fd_used</name>
-                            <type>7</type>
+                            <type>0</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
@@ -316,7 +316,7 @@
                         </item_prototype>
                         <item_prototype>
                             <name>RabbitMQ - Node - {#NODENAME} - mem_limit</name>
-                            <type>7</type>
+                            <type>0</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
@@ -359,7 +359,7 @@
                         </item_prototype>
                         <item_prototype>
                             <name>RabbitMQ - Node - {#NODENAME} - mem_used</name>
-                            <type>7</type>
+                            <type>0</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
@@ -445,7 +445,7 @@
                         </item_prototype>
                         <item_prototype>
                             <name>RabbitMQ - Node - {#NODENAME} - proc_total</name>
-                            <type>7</type>
+                            <type>0</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
@@ -488,7 +488,7 @@
                         </item_prototype>
                         <item_prototype>
                             <name>RabbitMQ - Node - {#NODENAME} - proc_used</name>
-                            <type>7</type>
+                            <type>0</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
@@ -531,7 +531,7 @@
                         </item_prototype>
                         <item_prototype>
                             <name>RabbitMQ - Node - {#NODENAME} - run_queue</name>
-                            <type>7</type>
+                            <type>0</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
@@ -617,7 +617,7 @@
                         </item_prototype>
                         <item_prototype>
                             <name>RabbitMQ - Node - {#NODENAME} - sockets_total</name>
-                            <type>7</type>
+                            <type>0</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
@@ -660,7 +660,7 @@
                         </item_prototype>
                         <item_prototype>
                             <name>RabbitMQ - Node - {#NODENAME} - sockets_used</name>
-                            <type>7</type>
+                            <type>0</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
@@ -703,7 +703,7 @@
                         </item_prototype>
                         <item_prototype>
                             <name>RabbitMQ - Node - {#NODENAME} - uptime</name>
-                            <type>7</type>
+                            <type>0</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
@@ -1061,10 +1061,10 @@
                 </discovery_rule>
                 <discovery_rule>
                     <name>RabbitMQ - Queue - Discovery</name>
-                    <type>7</type>
+                    <type>0</type>
                     <snmp_community/>
                     <snmp_oid/>
-                    <key>rabbitmq.discover.queues[my-host.example.com]</key>
+                    <key>rabbitmq.discover.queues[{HOSTNAME}]</key>
                     <delay>600</delay>
                     <status>0</status>
                     <allowed_hosts/>
@@ -1094,7 +1094,7 @@
                     <item_prototypes>
                         <item_prototype>
                             <name>RabbitMQ - Queue - {#VHOSTNAME}/{#QUEUENAME} - consumers</name>
-                            <type>7</type>
+                            <type>0</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
@@ -1137,7 +1137,7 @@
                         </item_prototype>
                         <item_prototype>
                             <name>RabbitMQ - Queue - {#VHOSTNAME}/{#QUEUENAME} - memory</name>
-                            <type>7</type>
+                            <type>0</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
@@ -1180,7 +1180,7 @@
                         </item_prototype>
                         <item_prototype>
                             <name>RabbitMQ - Queue - {#VHOSTNAME}/{#QUEUENAME} - messages</name>
-                            <type>7</type>
+                            <type>0</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
@@ -1223,7 +1223,7 @@
                         </item_prototype>
                         <item_prototype>
                             <name>RabbitMQ - Queue - {#VHOSTNAME}/{#QUEUENAME} - message_stats.ack_details.rate</name>
-                            <type>7</type>
+                            <type>0</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
@@ -1266,7 +1266,7 @@
                         </item_prototype>
                         <item_prototype>
                             <name>RabbitMQ - Queue - {#VHOSTNAME}/{#QUEUENAME} - message_stats.deliver_details.rate</name>
-                            <type>7</type>
+                            <type>0</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
@@ -1309,7 +1309,7 @@
                         </item_prototype>
                         <item_prototype>
                             <name>RabbitMQ - Queue - {#VHOSTNAME}/{#QUEUENAME} - message_stats.deliver_get_details.rate</name>
-                            <type>7</type>
+                            <type>0</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
@@ -1352,7 +1352,7 @@
                         </item_prototype>
                         <item_prototype>
                             <name>RabbitMQ - Queue - {#VHOSTNAME}/{#QUEUENAME} - message_stats.get_details.rate</name>
-                            <type>7</type>
+                            <type>0</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
@@ -1395,7 +1395,7 @@
                         </item_prototype>
                         <item_prototype>
                             <name>RabbitMQ - Queue - {#VHOSTNAME}/{#QUEUENAME} - message_stats.publish_details.rate</name>
-                            <type>7</type>
+                            <type>0</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
@@ -1438,7 +1438,7 @@
                         </item_prototype>
                         <item_prototype>
                             <name>RabbitMQ - Queue - {#VHOSTNAME}/{#QUEUENAME} - message_stats.redeliver_details.rate</name>
-                            <type>7</type>
+                            <type>0</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
