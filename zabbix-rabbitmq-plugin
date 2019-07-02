@@ -24,7 +24,7 @@ def getConfigs():
     try:
 
         stream = open("%s/config.yml" % (os.path.dirname(os.path.realpath(__file__))), "r")
-        return yaml.load(stream)
+        return yaml.load(stream, Loader=yaml.FullLoader)
 
     except Exception, e:
 
